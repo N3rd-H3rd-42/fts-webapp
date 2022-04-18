@@ -11,11 +11,6 @@
     "format": "prettier --write . && git add .",
     "prepare": "husky install"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn format && git add -A ."
-    }
-  },
   "dependencies": {
     "@types/express": "^4.17.13",
     "dotenv": "^16.0.0",
