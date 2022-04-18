@@ -1,0 +1,28 @@
+{
+  "name": "fts-webapp",
+  "version": "1.0.0",
+  "description": "web application for future transportion systems",
+  "main": "index.js",
+  "author": "dragon cats",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon ./server/index.ts",
+    "lint": "prettier --check .",
+    "format": "prettier --write ."
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn format && git add -A ."
+    }
+  },
+  "dependencies": {
+    "@types/express": "^4.17.13",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "husky": "^7.0.4",
+    "nodemon": "^2.0.15",
+    "prettier": "2.6.2"
+  }
+}
