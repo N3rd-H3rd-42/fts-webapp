@@ -8,10 +8,10 @@
   "scripts": {
     "dev": "nodemon ./server/index.ts",
     "lint": "prettier --check .",
-    "format": "prettier --write .",
+    "format": "prettier --write . && git add -A .",
     "prepare": "husky install",
     "eslint": "eslint . --ext .ts",
-    "pre-commit": "yarn eslint && git add -A ."
+    "pre-commit": "yarn eslint"
   },
   "dependencies": {
     "@types/express": "^4.17.13",
