@@ -10,7 +10,7 @@
     "lint": "prettier --check .",
     "format": "prettier --write .",
     "prepare": "husky install",
-    "eslint": "eslint . --ext .ts --fix",
+    "eslint": "eslint . --ext .ts",
     "pre-commit": "yarn eslint && git add -A ."
   },
   "dependencies": {
